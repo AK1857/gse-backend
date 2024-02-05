@@ -1,0 +1,30 @@
+{
+  "name": "gse-backend",
+  "version": "1.0.0",
+  "description": "Thish is backend project for gse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/AK1857/gse-backend.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "backend"
+  ],
+  "author": "Ashish kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AK1857/gse-backend/issues"
+  },
+  "homepage": "https://github.com/AK1857/gse-backend#readme",
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.1.1",
+    "nodemon": "^3.0.3"
+  }
+}
