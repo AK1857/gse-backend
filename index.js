@@ -3,6 +3,8 @@ const DbConnection=require("./src/db/dbConnection");
 const RegisterUser = require("./src/controllers/users/register.user");
 const LoginUser = require("./src/controllers/users/login.user");
 const UserAuthantication = require("./src/controllers/users/validate.token");
+const CreateCategory = require("./src/controllers/category/create.category");
+const EditCategory = require("./src/controllers/category/edit.category");
 require("dotenv").config();
 
 // run DbConnection method to connect database
@@ -22,6 +24,8 @@ res.status(200).json({
 app.post("/register",RegisterUser)
 app.post("/login",LoginUser)
 app.get("/user/authantication",UserAuthantication)
+app.post("/category/create",CreateCategory)
+app.put("/category/edit",EditCategory)
 
 
 // server run
