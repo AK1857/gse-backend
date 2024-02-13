@@ -8,6 +8,8 @@ const EditCategory = require("./src/controllers/category/edit.category");
 const AddProduct = require("./src/controllers/product/add.product");
 const EditProduct = require("./src/controllers/product/edit.product");
 const ListProduct = require("./src/controllers/product/list.product");
+const CreateCoupon=require("./src/controllers/coupon/create.coupon");
+const ApplyCoupon = require("./src/controllers/coupon/apply.coupon");
 require("dotenv").config();
 
 // run DbConnection method to connect database
@@ -33,6 +35,9 @@ app.put("/category/edit",EditCategory)
 app.post("/product/add",AddProduct)
 app.put("/product/edit",EditProduct)
 app.get("/product/list",ListProduct)
+// coupon
+app.post("/coupon/create",CreateCoupon)
+app.post("/coupon/apply",ApplyCoupon)
 
 
 // server run
